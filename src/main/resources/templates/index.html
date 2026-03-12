@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SupplyFlow Logistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 { color: #2c3e50; }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 { color: #2980b9; }
+    </style>
+</head>
+<body>
+<h1>🏭 SupplyFlow Logistics</h1>
+<p>Application de gestion d'entrepôt</p>
+
+<div class="menu">
+    <a href="/produits" class="card">
+        <h2> Produits</h2>
+        <p>Gérer les produits</p>
+    </a>
+    <a href="/fournisseurs" class="card">
+        <h2> Fournisseurs</h2>
+        <p>Gérer les fournisseurs</p>
+    </a>
+    <a href="/mouvements" class="card">
+        <h2> Mouvements</h2>
+        <p>Entrées & Sorties</p>
+    </a>
+</div>
+</body>
+</html>
